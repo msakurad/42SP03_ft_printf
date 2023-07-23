@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/21 23:22:52 by msakurad         ###   ########.fr       */
+/*   Created: 2023/07/21 19:43:20 by msakurad          #+#    #+#             */
+/*   Updated: 2023/07/22 22:18:33 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include <stdarg.h>
-# include <unistd.h>
-# include <stdlib.h>
-
-struct specifier
+int	ft_printf(const char *format, ...)
 {
-	char	data_type;
-	char	flag;
-	int		width;
-	int		precision;
-};
 
-int	ft_printf(const char *format, ...);
-
+}
