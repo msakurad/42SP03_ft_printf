@@ -4,10 +4,34 @@
 
 int	main(void)
 {
-	ft_printf("1. normal:\n");
+	int	count_tests;
+
+	count_tests = 0;
+	count_tests++;
+	printf("\n\033[1;36mTEST N%d: \033[0m\n", count_tests);
+	ft_printf("Sample text, testing putchar and putstr");
+
+	printf("\n\033[1;36m---------------------------------------\033[0m\n");
+	count_tests++;
+	printf("\n\033[1;36mTEST N%d: \033[0m", count_tests);
+	printf("Return value of ft_printf, look for the variable \"len\"\n");
+	int	nbr_printed_chars;
+	printf("Sample for \"abcdefg\"\n");
+	nbr_printed_chars = ft_printf("abcdefg");
+	printf("\n");
+	printf("The number of characters printed: %d\n\n", nbr_printed_chars);
+	printf("Sample for \"abcdefg with \\n, \\v, \\t, \\a, \\b, \\f, \\r\"\n");
+	nbr_printed_chars = ft_printf("abcdefg\n\v\t\a\b\f\r");
+	printf("\n");
+	printf("The number of characters printed: %d\n\n", nbr_printed_chars);
+
+	printf("\n\033[1;36m---------------------------------------\033[0m\n");
+	count_tests++;
+	printf("\n\033[1;36mTEST N%d: \033[0m", count_tests);
+	printf("The conversions %%cspdiuxX%%\n");
 	ft_printf("%%c with ascii number 97: %c\n", 97);
-	// ft_printf("%%c with literal char 'b': %c\n", 'b');
-	// ft_printf("%%s: %s\n", "my tests");
+	ft_printf("%%c with literal char 'b': %c\n", 'b');
+	ft_printf("%%s with \"my tests\": %s\n", "my tests");
 	// ft_printf("%%p: %p\n", "jorge");
 	// ft_printf("\n--------------------\n");
 	// ft_printf("%%d: %d\n", 42);
@@ -81,5 +105,7 @@ int	main(void)
 	// ft_printf("\n");
 	// ft_printf("The number of characters printed: %d\n\n", nbr_printed_chars);
 
+	printf("\n\033[42m--------------------------------------------------\033[0m\n");
+	printf("\n\033[42mTOTAL OF TESTS: %d\033[0m\n\n", count_tests);
 	return (0);
 }

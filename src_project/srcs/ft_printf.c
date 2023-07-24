@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:43:20 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 14:57:08 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/24 15:36:14 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,24 @@ int	ft_printf(const char *format, ...)
 	va_start(ap, format);
 	while (*format)
 	{
-		// if (*format == '%')
-		// {
-			
-		// }
+		if (*format == '%')
+		{
+			format++;
+			if (*format == 'c')
+			{
+				ft_putchar(va_arg(ap, int));
+				format++;
+			}
+			if (*format == 's')
+			{
+				ft_putstr(va_arg(ap, char *));
+				format++;
+			}
+		}
 		ft_putchar(*format);
 		format++;
 		len++;
 	}
-	ft_putchar('\n');
 	va_end(ap);
 	return (len);
 }
