@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/22 21:12:19 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/24 01:32:34 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ struct specifier
 };
 
 int	ft_printf(const char *format, ...);
+void	ft_putchar(char c);
+void	ft_putstr(char *s);
 
 #endif

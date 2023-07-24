@@ -1,3 +1,6 @@
 *.out
+*.o
 .vscode/
 Unity/
+build_project/*
+lib_project/*

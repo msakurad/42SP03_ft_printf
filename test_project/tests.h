@@ -2,7 +2,6 @@
 #ifndef TESTS_H
 # define TESTS_H
 
-# include "libft.h"
 # include "unity.h"
 # include "unity_internals.h"
 # include <stdio.h>
@@ -21,7 +20,7 @@
 void	run_test_ft(int enum_test);
 
 // MANDATORY
-void	run_test_ft_isalpha(void);
+void	run_test_ft_putstr(void);
 
 // BONUS
 
@@ -29,7 +28,7 @@ void	run_test_ft_isalpha(void);
 enum Tests
 {
 	// MANDATORY
-	Tests_ft_isalpha = 1,
+	Tests_ft_putstr = 1,
 	// BONUS
 	
 };

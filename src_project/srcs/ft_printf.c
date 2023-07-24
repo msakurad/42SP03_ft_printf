@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/23 23:59:50 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 02:09:37 by msakurad         ###   ########.fr       */
+/*   Created: 2023/07/21 19:43:20 by msakurad          #+#    #+#             */
+/*   Updated: 2023/07/24 01:46:00 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-void	ft_putstr(char *s)
+int	ft_printf(const char *format, ...)
 {
-	while (*s)
+	va_list	ap;
+	// struct specifier	a;
+	int	len;
+
+	len = 0;
+	va_start(ap, format);
+	while (*format)
 	{
-		write(1, s, 1);
-		s++;
+		// if (*format == '%')
+		// {
+			
+		// }
+		ft_putstr(".");
+		len++;
 	}
+	va_end(ap);
+	return (len);
 }
