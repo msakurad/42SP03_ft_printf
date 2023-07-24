@@ -79,5 +79,6 @@ int	main(void)
 	printf("Sample for \"abcdefg with \\n, \\v, \\t, \\a, \\b, \\f, \\r\"\n");
 	nbr_printed_chars = printf("abcdefg\n\v\t\a\b\f\r");
 	printf("\n");
-	printf("The number of characters printed: %d\n\n", nbr_printed_chars);return (0);
+	printf("The number of characters printed: %d\n\n", nbr_printed_chars);
+	return (0);
 }

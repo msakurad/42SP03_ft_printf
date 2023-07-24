@@ -6,11 +6,11 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 01:47:50 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 02:08:41 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/24 14:57:14 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 void	ft_putchar(char c)
 {

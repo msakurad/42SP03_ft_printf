@@ -6,11 +6,11 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:43:20 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 01:46:00 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/24 14:57:08 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *format, ...)
 {
@@ -26,9 +26,11 @@ int	ft_printf(const char *format, ...)
 		// {
 			
 		// }
-		ft_putstr(".");
+		ft_putchar(*format);
+		format++;
 		len++;
 	}
+	ft_putchar('\n');
 	va_end(ap);
 	return (len);
 }

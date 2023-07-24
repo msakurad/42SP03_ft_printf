@@ -2,6 +2,8 @@
 #ifndef TESTS_H
 # define TESTS_H
 
+#include "ft_printf.h"
+
 # include "unity.h"
 # include "unity_internals.h"
 # include <stdio.h>
