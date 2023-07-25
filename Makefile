@@ -8,6 +8,7 @@ LINK_EXE := cc
 PATH_SRC_PROJ := ./src_project
 PATH_SRC := $(PATH_SRC_PROJ)/srcs/
 PATH_INCLUDE := $(PATH_SRC_PROJ)/includes/
+PATH_OBJ := $(PATH_SRC_PROJ)/objs/
 PATH_LIB := ./lib_project/
 PATH_TEST := ./test_project/
 PATH_BUILD := ./build_project/
@@ -18,7 +19,7 @@ INCLUDE_TEST := -I $(PATH_TEST) -I $(PATH_UNITY)
 
 SRC_FILES = ft_printf.c ft_putchar.c ft_putstr.c
 SRC := $(addprefix $(PATH_SRC), $(SRC_FILES))
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:$(PATH_SRC)%.c=$(PATH_OBJ)%.o)
 
 TEST_ALLFUNCTIONS_FILES := test_all.c test_ft_putstr.c
 TEST_ALLFUNCTIONS := $(addprefix $(PATH_TEST), $(TEST_ALLFUNCTIONS_FILES))
@@ -30,7 +31,12 @@ lib: $(NAME)
 $(NAME): $(OBJ)
 	@$(LINK_LIB) $(PATH_LIB)$@ $^
 
-%.o: %.c
+$(PATH_OBJ):
+	@mkdir $@
+
+$(OBJ): | $(PATH_OBJ)
+
+$(PATH_OBJ)%.o: $(PATH_SRC)%.c
 	@$(COMPILE) $(CCFLAGS) $(INCLUDE_PROJ) -c $< -o $@
 
 ft:
@@ -50,10 +56,11 @@ test:
 
 clean:
 	@rm -f $(OBJ)
+	@rm -fd $(PATH_OBJ)
 
 fclean: clean
 	@rm -f $(PATH_BUILD)* $(PATH_LIB)/*.a
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all lib clean fclean re ft test
