@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/23 23:59:50 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/26 18:31:13 by msakurad         ###   ########.fr       */
+/*   Created: 2023/07/26 17:23:35 by msakurad          #+#    #+#             */
+/*   Updated: 2023/07/26 18:40:42 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(const char *s)
+int	ft_putptr(unsigned long p)
 {
 	int	len;
 
-	len = 0;
-	while (*s)
-	{
-		len += write(1, s, 1);
-		s++;
-	}
+	len = p;
 	return (len);
 }

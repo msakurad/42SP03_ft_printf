@@ -6,13 +6,13 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 01:47:50 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 14:57:14 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/26 17:17:01 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	write(1, &c, 1);
+	return (write(1, &c, 1));
 }

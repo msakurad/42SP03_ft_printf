@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/24 14:58:02 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/07/26 18:44:32 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,20 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-struct specifier
-{
-	char	data_type;
-	char	flag;
-	int		width;
-	int		precision;
-};
+// typedef struct s_specifier
+// {
+// 	char	data_type;
+// 	char	flag;
+// 	int		width;
+// 	int		precision;
+// }	t_specifier;
 
-int		ft_printf(const char *format, ...);
-void	ft_putchar(char c);
-void	ft_putstr(char *s);
+# define HEX_BASE_LOWCASE "0123456789abcdef"
+# define HEX_BASE_UPCASE "0123456789ABCDEF"
+
+int	ft_printf(const char *format, ...);
+int	ft_putchar(char c);
+int	ft_putstr(const char *s);
+int	ft_putptr(unsigned long p);
 
 #endif

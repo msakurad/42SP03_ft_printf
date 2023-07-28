@@ -23,7 +23,7 @@ int	main(void)
 	printf("Sample for \"abcdefg with \\n, \\v, \\t, \\a, \\b, \\f, \\r\"\n");
 	nbr_printed_chars = ft_printf("abcdefg\n\v\t\a\b\f\r");
 	printf("\n");
-	printf("The number of characters printed: %d\n\n", nbr_printed_chars);
+	printf("The number of characters printed: %d\n", nbr_printed_chars);
 
 	printf("\n\033[1;36m---------------------------------------\033[0m\n");
 	count_tests++;
@@ -32,7 +32,17 @@ int	main(void)
 	ft_printf("%%c with ascii number 97: %c\n", 97);
 	ft_printf("%%c with literal char 'b': %c\n", 'b');
 	ft_printf("%%s with \"my tests\": %s\n", "my tests");
-	// ft_printf("%%p: %p\n", "jorge");
+	ft_printf("%%p: %p\n", "jorge");
+	printf("%%p: %p\n", "jorge");
+
+	printf("\n\033[1;36m---------------------------------------\033[0m\n");
+	count_tests++;
+	printf("\n\033[1;36mTEST N%d: \033[0m", count_tests);
+	printf("Return value for the conversions (len)\n");
+	printf("Sample for \"%%%%c-%c-%%s-%s\"\n", 'a',"bcdefg");
+	nbr_printed_chars = ft_printf("%%%c%s", 'a',"bcdefg");
+	printf("\n");
+	printf("The number of characters printed: %d\n\n", nbr_printed_chars);
 	// ft_printf("\n--------------------\n");
 	// ft_printf("%%d: %d\n", 42);
 	// ft_printf("%%d for 0xA: %d\n", 0xA);
