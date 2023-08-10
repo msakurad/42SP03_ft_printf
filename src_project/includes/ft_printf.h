@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/07/26 18:44:32 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/03 19:28:53 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
 int	ft_putstr(const char *s);
 int	ft_putptr(unsigned long p);
+int	ft_putnbr_base(int n, char *base);
 
 #endif

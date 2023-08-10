@@ -4,33 +4,47 @@
 
 int	main(void)
 {
-	// printf("1. normal:\n");
-	// printf("%%c with ascii number 97: %c\n", 97);
-	// printf("%%c with literal char 'b': %c\n", 'b');
-	// printf("%%s: %s\n", "my tests");
-	// printf("%%p: %p\n", "jorge");
-	// printf("\n--------------------\n");
-	// printf("%%d: %d\n", 42);
-	// printf("%%d for 0xA: %d\n", 0xA);
-	// printf("%%i for 0xA: %i\n", 0xA);
-	// printf("%%i: %i\n", -42);
-	// printf("%%i INT_MAX: %i\n", INT_MAX);
-	// printf("%%i INT_MIN: %i\n", INT_MIN);
-	// printf("%%u unsigned positive 42: %u\n", 42);
-	// printf("%%u unsigned negative -42: %u\n", -42);
-	// printf("%%u unsigned negative -1: %u\n", -1);
-	// printf("%%u unsigned INT_MAX: %u\n", INT_MAX);
-	// printf("%%u unsigned INT_MIN: %u\n", INT_MIN);
-	// printf("--------------------\n");
-	// printf("%%x 15: %x\n", 15);
-	// printf("%%x 16: %x\n", 16);
-	// printf("%%x 20: %x\n", 20);
-	// printf("%%x 1234567: %x\n", 1234567);
-	// printf("%%X 14: %X\n", 14);
-	// printf("%%X 15: %X\n", 15);
-	// printf("%%X 1234567: %X\n", 1234567);
-	// printf("--------------------\n");
-	// printf("%% %% %% %%\n");
+	printf("1. normal:\n");
+	printf("%%c with ascii number 97: %c\n", 97);
+	printf("%%c with literal char 'b': %c\n", 'b');
+	printf("%%s: %s\n", "my tests");
+	printf("%%p: %p\n", "jorge");
+	printf("\n--------------------\n");
+	printf("%%d: %d\n", 42);
+	printf("%%d for 0xA: %d\n", 0xA);
+	printf("%%i for 0xA: %i\n", 0xA);
+	printf("%%i: %i\n", -42);
+	printf("%%i INT_MAX: %i\n", INT_MAX);
+	printf("%%i INT_MIN: %i\n", INT_MIN);
+	printf("%%u unsigned positive 42: %u\n", 42);
+	printf("%%u unsigned negative -42: %u\n", -42);
+	printf("%%u unsigned negative -1: %u\n", -1);
+	printf("%%u unsigned INT_MAX: %u\n", INT_MAX);
+	printf("%%u unsigned INT_MIN: %u\n", INT_MIN);
+	printf("--------------------\n");
+	printf("%%x 15: %x\n", 15);
+	printf("%%x 16: %x\n", 16);
+	printf("%%x 20: %x\n", 20);
+	printf("%%x 1234567: %x\n", 1234567);
+	printf("%%X 14: %X\n", 14);
+	printf("%%X 15: %X\n", 15);
+	printf("%%X 1234567: %X\n", 1234567);
+	printf("%%X 9: %X\n", 9);
+	printf("%%X -9: %X\n", -9);
+	printf("%%X 10: %X\n", 10);
+	printf("%%X -10: %X\n", -10);
+	printf("%%X 15: %X\n", 15);
+	printf("%%X -15: %X\n", -15);
+	printf("%%X 16: %X\n", 16);
+	printf("%%X -16: %X\n", -16);
+	printf("%%X 17: %X\n", 17);
+	printf("%%X -17: %X\n", -17);
+	printf("%%X 18: %X\n", 18);
+	printf("%%X -18: %X\n", -18);
+	printf("%%X 19: %X\n", 19);
+	printf("%%X -19: %X\n", -19);
+	printf("--------------------\n");
+	printf("%% %% %% %%\n");
 
 	/*Bonus:
 	- flags '-0.'

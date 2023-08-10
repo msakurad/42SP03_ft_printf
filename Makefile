@@ -17,9 +17,11 @@ PATH_UNITY := ./Unity/src/
 INCLUDE_PROJ := -I $(PATH_INCLUDE)
 INCLUDE_TEST := -I $(PATH_TEST) -I $(PATH_UNITY)
 
-SRC_FILES = ft_printf.c ft_putchar.c ft_putstr.c ft_putptr.c
+SRC_FILES := ft_printf.c \
+	ft_putchar.c ft_putstr.c ft_putptr.c \
+	ft_putnbr_base.c
 SRC := $(addprefix $(PATH_SRC), $(SRC_FILES))
-OBJ = $(SRC:$(PATH_SRC)%.c=$(PATH_OBJ)%.o)
+OBJ := $(SRC:$(PATH_SRC)%.c=$(PATH_OBJ)%.o)
 
 TEST_ALLFUNCTIONS_FILES := test_all.c test_ft_putstr.c
 TEST_ALLFUNCTIONS := $(addprefix $(PATH_TEST), $(TEST_ALLFUNCTIONS_FILES))
@@ -45,9 +47,9 @@ ft:
 	-o $(PATH_BUILD)$@
 	@./$(PATH_BUILD)$@
 
-test:
-	@$(LINK_EXE) $(CC_FLAGS) $(TEST_ALLFUNCTIONS) $(UNITY) \
-	-lftprintf -L$(PATH_LIB) $(INCLUDE_TEST) \
+test_%.c:
+	@$(LINK_EXE) $(CC_FLAGS) $@ $(UNITY) \
+	-lftprintf -L$(PATH_LIB) $(INCLUDE_PROJ) $(INCLUDE_TEST) \
 	-o $(PATH_BUILD)$@
 	@./$(PATH_BUILD)$@
 
