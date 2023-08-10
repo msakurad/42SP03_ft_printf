@@ -32,8 +32,13 @@ int	main(void)
 	ft_printf("%%c with ascii number 97: %c\n", 97);
 	ft_printf("%%c with literal char 'b': %c\n", 'b');
 	ft_printf("%%s with \"my tests\": %s\n", "my tests");
-	ft_printf("%%p: %p\n", "jorge");
-	printf("%%p: %p\n", "jorge");
+	// ft_printf("%%p: %p\n", "jorge");
+	// printf("%%p: %p\n", "jorge");
+	ft_printf("%%x: %x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x %x\n", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+	ft_printf("%%X: %X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X %X\n", 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+	ft_printf("%%x: %x %x %x %x %x %x %x %x %x %x\n", 17,18,19,20,21,22,23,24,25,26);
+	printf("lib - %%x with 12345: %x\n", 12345);
+	ft_printf("ft - %%x with 12345: %x\n", 12345);
 
 	printf("\n\033[1;36m---------------------------------------\033[0m\n");
 	count_tests++;
