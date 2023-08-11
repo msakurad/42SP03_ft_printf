@@ -19,7 +19,7 @@ INCLUDE_TEST := -I $(PATH_TEST) -I $(PATH_UNITY)
 
 SRC_FILES := ft_printf.c \
 	ft_putchar.c ft_putstr.c ft_putptr.c \
-	ft_putnbr_base.c
+	ft_putnbr_base.c ft_putnbr.c 
 SRC := $(addprefix $(PATH_SRC), $(SRC_FILES))
 OBJ := $(SRC:$(PATH_SRC)%.c=$(PATH_OBJ)%.o)
 

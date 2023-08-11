@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/08/11 17:07:12 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:05:42 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,15 @@
 // 	int		precision;
 // }	t_specifier;
 
-# define BASE_HEX_LOWCASE "0123456789abcdef"
-# define BASE_HEX_UPCASE "0123456789ABCDEF"
+# define BASE_HEXLW "0123456789abcdef"
+# define BASE_HEXUP "0123456789ABCDEF"
 # define BASE_DEC "0123456789"
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
 int	ft_putstr(const char *s);
 int	ft_putptr(unsigned long ulong_p);
+int	ft_putnbr(int int_n);
 int	ft_putnbr_base(unsigned long ulong_n, char *base, int base_len);
 
 #endif
