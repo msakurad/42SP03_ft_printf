@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 17:47:28 by msakurad          #+#    #+#             */
-/*   Updated: 2023/08/11 18:22:31 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/12 08:34:44 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_putnbr(int int_n)
 		len = ft_putnbr(ft_abs(int_n / 10));
 	}
 	if (int_n < 0)
-			len += 1;
+		len += 1;
 	len += ft_putchar(ft_abs(int_n % 10) + '0');
 	return (len);
 }
