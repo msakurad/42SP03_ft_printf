@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/08/11 18:05:42 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/17 13:49:26 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,10 @@
 # define BASE_HEXLW "0123456789abcdef"
 # define BASE_HEXUP "0123456789ABCDEF"
 # define BASE_DEC "0123456789"
+# define NULL_STR "(null)"
+# define NULL_STR_LEN 6
+# define NULL_PTR "(nil)"
+# define NULL_PTR_LEN 5
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(char c);
