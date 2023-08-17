@@ -34,9 +34,14 @@ int	main(void)
 	ft_printf("%%s with \"my tests\": %s\n", "my tests");
 	ft_printf("%%d with number 42: %d\n", 42);
 	ft_printf("%%i with number 42: %i\n", 42);
-	ft_printf("%%u with number 42: %i\n", 42);
+	ft_printf("%%u with number 42: %u\n", 42);
+	ft_printf("%%d with number -1: %d\n", -1);
+	ft_printf("%%d with number -9: %d\n", -9);
 	ft_printf("%%d with number -42: %d\n", -42);
-	ft_printf("%%u with number -42: %i\n", -42);
+	ft_printf("%%u with number -42: %u\n", -42);
+	ft_printf("%%d for 0xA: %d\n", 0xA);
+	ft_printf("%%i for 0xA: %i\n", 0xA);
+	ft_printf("%%u for 0xA: %u\n", 0xA);
 	ft_printf("ft - %%d with number INT_MAX: %d\n", INT_MAX);
 	printf("lb - %%d with number INT_MAX: %d\n", INT_MAX);
 	ft_printf("ft - %%d with number INT_MIN: %d\n", INT_MIN);
@@ -123,10 +128,7 @@ int	main(void)
 	ft_printf("ft - %%x with \"NULL\": %x\n", NULL);
 	printf("lb - %%X with \"NULL\": %X\n", NULL);
 	ft_printf("ft - %%X with \"NULL\": %X\n", NULL);
-	// ft_printf("\n--------------------\n");
-	// ft_printf("%%d: %d\n", 42);
-	// ft_printf("%%d for 0xA: %d\n", 0xA);
-	// ft_printf("%%i for 0xA: %i\n", 0xA);
+	ft_printf("\n--------------------\n");
 	// ft_printf("%%i: %i\n", -42);
 	// ft_printf("%%i INT_MAX: %i\n", INT_MAX);
 	// ft_printf("%%i INT_MIN: %i\n", INT_MIN);
