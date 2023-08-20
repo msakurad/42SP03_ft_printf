@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:40:14 by msakurad          #+#    #+#             */
-/*   Updated: 2023/08/17 13:49:26 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/20 20:26:00 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-
-// typedef struct s_specifier
-// {
-// 	char	data_type;
-// 	char	flag;
-// 	int		width;
-// 	int		precision;
-// }	t_specifier;
 
 # define BASE_HEXLW "0123456789abcdef"
 # define BASE_HEXUP "0123456789ABCDEF"

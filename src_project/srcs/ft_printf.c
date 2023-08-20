@@ -6,7 +6,7 @@
 /*   By: msakurad <msakurad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:43:20 by msakurad          #+#    #+#             */
-/*   Updated: 2023/08/12 08:33:40 by msakurad         ###   ########.fr       */
+/*   Updated: 2023/08/20 20:25:09 by msakurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_printf(const char *format, ...)
 	int		len;
 
 	if (!format)
-		return (0);
+		return (-1);
 	va_start(ap, format);
 	len = ft_scan_array(ap, format);
 	va_end(ap);

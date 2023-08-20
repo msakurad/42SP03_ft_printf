@@ -24,6 +24,15 @@ int	main(void)
 	nbr_printed_chars = ft_printf("abcdefg\n\v\t\a\b\f\r");
 	printf("\n");
 	printf("The number of characters printed: %d\n", nbr_printed_chars);
+	printf("When ft_printf(0):");
+	nbr_printed_chars = ft_printf(0);
+	printf("\n");
+	printf("The number of characters printed: %d\n", nbr_printed_chars);
+	printf("\n");
+	printf("When printf(0):");
+	nbr_printed_chars = printf(0);
+	printf("\n");
+	printf("The number of characters printed: %d\n", nbr_printed_chars);
 
 	printf("\n\033[1;36m---------------------------------------\033[0m\n");
 	count_tests++;
